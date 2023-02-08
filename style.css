@@ -120,7 +120,7 @@ form button{
 }
 
 .C-Front{
-    background: url("/images/bg-card-front.png");
+    background: url("images/bg-card-front.png");
     position: absolute;
     top: 200px;
     left: 250px;
@@ -129,7 +129,7 @@ form button{
 }
 
 .C-Back{
-    background: url("/images/bg-card-back.png");
+    background: url("images/bg-card-back.png");
     position: absolute;
     top: 480px;
     left: 350px;
