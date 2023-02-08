@@ -1,0 +1,307 @@
+*{
+    margin: 0px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body{
+    overflow: hidden;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.content{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.left{
+    width: 570px;
+    height: 100%;
+    background:url('/images/bg-main-desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;;
+}
+
+.right{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.C-H{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.C-H input{
+    width: 450px;
+    margin-top: 10px;
+    border:1px solid hsl(270, 3%, 87%);
+    outline: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.C-N{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.C-N input{
+    margin-top: 10px;
+    border:1px solid hsl(270, 3%, 87%);
+    outline: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.C-N input:focus,.C-H input:focus,.C-L-I input:focus,.C-R input:focus{
+    border: 1px solid  hsl(249, 99%, 64%);
+}
+
+.C-EC{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+form input::placeholder{
+  color: lightgrey;
+}
+
+.C-L-I input{
+    width: 80px;
+    margin-top: 10px;
+    border:1px solid hsl(270, 3%, 87%);
+    outline: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.C-R{
+    display: flex;
+    flex-direction: column;
+}
+
+.C-R input{
+    width: 200px;
+    margin-top: 10px;
+    border:1px solid hsl(270, 3%, 87%);
+    outline: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+form button{
+    margin-top: 30px;
+    width: 472px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.C-H p, .C-N p, .C-L p, .C-R p{
+    color: red;
+    display: none;
+}
+
+.C-Front{
+    background: url("/images/bg-card-front.png");
+    position: absolute;
+    top: 200px;
+    left: 250px;
+    width: 447px;
+    height: 245px;
+}
+
+.C-Back{
+    background: url("/images/bg-card-back.png");
+    position: absolute;
+    top: 480px;
+    left: 350px;
+    width: 447px;
+    height: 245px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 1660px) {
+  .right{
+    justify-content: end;
+  }
+  form{
+    margin-right: 200px;
+  }
+}
+
+@media screen and (max-width: 1500px){
+    form{
+        margin-right: 100px;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    form{
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .left{
+        width: 400px;
+    }
+  .C-Front{
+    left: 100px;
+  }
+
+  .C-Back{
+    left: 200px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+    .left{
+        width: 300px;
+    }
+  .C-Front{
+    left: 20px;
+    transform: scale(.9);
+  }
+
+  .C-Back{
+    left: 80px;
+    transform: scale(.9);
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  form{
+    transform: scale(.8);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+    form{
+        margin-right: 0px;
+    }
+  
+}
+
+@media screen and (max-width: 950px) {
+  .content{
+    flex-flow: column;
+  }
+
+  .left{
+    width: 100vw;
+    height: 30%;
+  }
+
+  .right{
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+  }
+
+  .C-Front{
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 140px;
+    z-index: 12;
+    transform: translate(-20%, 5%);
+  }
+
+  .C-Back{
+    left: 0;
+    right: 0;
+    top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(20%, 0%);
+
+  }
+
+  form{
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 660px) {
+
+  .C-Back{
+    transform: scale(.8) translate(20%, 5%);
+  }
+
+  .C-Front{
+    transform: scale(.8) translate(-20%, 0%);
+  }
+  
+}
+
+.C-Circles{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.C-Circles div:first-child{
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50px;
+}
+
+.C-Circles div:nth-child(2){
+  margin-left: 20px;
+  width: 25px;
+  height: 25px;
+  border: 1px solid white;
+  border-radius: 50px;
+}
+
+.C-CardNumber{
+  font-size: 28px;
+  color: white;
+  letter-spacing: 5px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.cName,.cDate{
+  font-size: 15px;
+  color: white;
+  margin: 20px 35px 0px 35px;
+}
+
+.C-Info{
+  display: flex;
+  justify-content: space-between;
+}
+
+.C-CVC{
+  color: white;
+  width: 80%;
+  text-align: end;
+  letter-spacing: 2px;
+  margin-bottom: 3px;
+}
