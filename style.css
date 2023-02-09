@@ -73,6 +73,8 @@ body{
     margin-top: 20px;
 }
 
+
+
 form input::placeholder{
   color: lightgrey;
 }
@@ -304,4 +306,35 @@ form button{
   text-align: end;
   letter-spacing: 2px;
   margin-bottom: 3px;
+}
+
+.completeState{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.completeState p:nth-child(2){
+  margin-top: 20px;
+  font-size: 25px;
+  letter-spacing: 4px;
+  color: hsl(278, 68%, 11%);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.completeState p:nth-child(3){
+  font-size: 18px;
+  color: grey;
+}
+
+.completeState button{
+  margin-top: 30px;
+  width: 400px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: hsl(278, 68%, 11%);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
 }
